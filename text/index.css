@@ -2,4 +2,51 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: #757f85;
+}
+
+.body_title{
+    padding: 1.5rem;
+    text-align: center;
+    background: #757f85;
+}
+
+.body_who{
+    margin: 0 auto;
+    max-width: 80%;
+
+    border: 3px groove black;
+    background-color: #A6A6A6;
+    text-align: center;
+}
+
+.body_who h2{
+    padding: 1.5rem
+}
+
+.body_who p{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.body_who:last-child{
+    padding-bottom: 1.5rem;
+}
+
+/*Mid-Size*/
+@media only screen and (min-width: 750px){
+    .body_who{
+        max-width: 70%;
+    }
+}
+
+/*Max-Size*/
+@media only screen and (min-width: 1120px){
+    .body_who{
+        max-width: 60%;
+    }
 }
