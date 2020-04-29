@@ -4,7 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="text/index.css">
         <link rel="stylesheet" href="text/navstyling.css">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
     </head>
     <main>
 
@@ -15,11 +15,75 @@
                     <h1>Daniel D.</h1>
                 </div>
                 <ul class="nav_navbar">
-                    <li><a href="index.html">Home</h1></a>
-                    <li><a href="inspiration.html">Inspiration</a></li>
+                    <li><a href="index.html">Home</a>
+                    <li class="Insp"><a href="inspiration.html">
+                        <ul>
+                            <li>Inspirations</li>
+                            <li>& Aspirations</li>
+                        </ul>
+                        </a>
+                    </li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </nav>
+
+        <!--Body-->
+        <body>
+            <div>
+                <form>
+                    <label for="name">Name: (required)
+                    </label><br>
+                    <input name="name" required><br>
+
+                    <label for="email">Email: (required)
+                    </label><br>
+                    <input type="email" name="email" required><br>
+
+                    <label for="phone">Phone Number: (required)
+                    </label><br>
+                    <input type="tel" id="phone" name="phone"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    required>
+
+                    <p>Preffered Contact Method? (required)</p>
+
+                    <input type="radio" id="pref1" name="preference" value="Email" required>
+                    <label for="pref1">Email</label><br>
+
+                    <input type="radio" id="pref2" name="preference" value="Phone" required>
+                    <label for="pref2">Phone</label><br>
+
+                    <label for="Province">Choose your province:
+                    </label><br>
+                    <select id="Province" name="Province">
+                        <option value="AB">Alberta</option>
+                        <option value="BC">British Columbia</option>
+                        <option value="MB">Manitoba</option>
+                        <option value="NB">New Brunswick</option>
+                        <option value="NL">Newfoundland and Labrador</option>
+                        <option value="NS">Nova Scotia</option>
+                        <option value="ON">Ontario</option>
+                        <option value="PE">Prince Edward Island</option>
+                        <option value="QC">Quebec</option>
+                        <option value="SK">Saskatchewan</option>
+                        <option value="NT">Northwest Territories</option>
+                        <option value="NU">Nunavut</option>
+                        <option value="YT">Yukon</option>
+                    </select><br>
+
+                    <label for="msg">Message:</label><br>
+                    <textarea name="msg"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </body>
+        <!--Footer-->
+        <footer>
+            <div class="footer_note">
+                <h3>Designed and written by Daniel Dupras. April, 2020</h3>
+            </div>
+        </footer>
     </main>
 </html>
