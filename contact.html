@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="text/index.css">
+        <link rel="stylesheet" href="text/contact.css">
         <link rel="stylesheet" href="text/navstyling.css">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
     </head>
@@ -30,55 +30,67 @@
 
         <!--Body-->
         <body>
-            <div>
-                <form>
-                    <label for="name">Name: (required)
-                    </label><br>
-                    <input name="name" required><br>
+            <h1 class="body_title">Contact Me</h1>
+            <div class="main_container">
+                <div class="form_text">
+                    <p>Hey! If you're interested in contacting me please fill
+                        out the following form and I'll get back to you ASAP!
+                        If you're from outside of Canada I'm sorry to say that I'm 
+                        currently not accepting any work from other countries.
+                    </p>
+                </div>
+                <div class="form_container">
+                    <form>
 
-                    <label for="email">Email: (required)
-                    </label><br>
-                    <input type="email" name="email" required><br>
+                        <label for="name">Name: (required)
+                        </label><br>
+                        <input name="name" required><br>
 
-                    <label for="phone">Phone Number: (required)
-                    </label><br>
-                    <input type="tel" id="phone" name="phone"
-                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                    required>
+                        <label for="email">Email: (required)
+                        </label><br>
+                        <input type="email" name="email" required><br>
 
-                    <p>Preffered Contact Method? (required)</p>
+                        <label for="phone">Phone Number: (required)
+                        </label><br>
+                        <input type="tel" id="phone" name="phone"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        required><sub>Format(XXX-XXX-XXXX)</sub>
 
-                    <input type="radio" id="pref1" name="preference" value="Email" required>
-                    <label for="pref1">Email</label><br>
+                        <p>Preffered Contact Method? (required)</p>
 
-                    <input type="radio" id="pref2" name="preference" value="Phone" required>
-                    <label for="pref2">Phone</label><br>
+                        <input type="radio" id="pref1" name="preference" value="Email" required>
+                        <label for="pref1">Email</label><br>
 
-                    <label for="Province">Choose your province:</label>
-                    <select id="Province" name="Province">
-                        <option value="AB">Alberta</option>
-                        <option value="BC">British Columbia</option>
-                        <option value="MB">Manitoba</option>
-                        <option value="NB">New Brunswick</option>
-                        <option value="NL">Newfoundland and Labrador</option>
-                        <option value="NS">Nova Scotia</option>
-                        <option value="ON">Ontario</option>
-                        <option value="PE">Prince Edward Island</option>
-                        <option value="QC">Quebec</option>
-                        <option value="SK">Saskatchewan</option>
-                        <option value="NT">Northwest Territories</option>
-                        <option value="NU">Nunavut</option>
-                        <option value="YT">Yukon</option>
-                    </select><br>
+                        <input type="radio" id="pref2" name="preference" value="Phone" required>
+                        <label for="pref2">Phone</label><br>
 
-                    <label for="msg">Message:</label><br>
-                    <textarea name="msg"></textarea>
+                        <label for="Province">Choose your province:
+                        </label><br>
+                        <select id="Province" name="Province">
+                            <option value="AB">Alberta</option>
+                            <option value="BC">British Columbia</option>
+                            <option value="MB">Manitoba</option>
+                            <option value="NB">New Brunswick</option>
+                            <option value="NL">Newfoundland and Labrador</option>
+                            <option value="NS">Nova Scotia</option>
+                            <option value="ON">Ontario</option>
+                            <option value="PE">Prince Edward Island</option>
+                            <option value="QC">Quebec</option>
+                            <option value="SK">Saskatchewan</option>
+                            <option value="NT">Northwest Territories</option>
+                            <option value="NU">Nunavut</option>
+                            <option value="YT">Yukon</option>
+                        </select><br>
 
-                    <input type="submit" value="Submit">
-                </form>
+                        <label for="msg">Message:</label><br>
+                        <textarea name="msg"></textarea><br>
+
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
             </div>
         </body>
-        
+
         <!--Footer-->
         <footer>
             <div class="footer_note">
